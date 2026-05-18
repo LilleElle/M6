@@ -1,0 +1,26 @@
+recipe-site/
+│
+├── index.html
+│
+├── morgenmad.html
+├── opskrift-morgenmad.html
+│
+├── frokost.html
+├── opskrift-frokost.html
+│
+├── aftensmad.html
+├── opskrift-aftensmad.html
+│
+├── snacks.html
+├── opskrift-snack.html
+│
+├── css/
+│   ├── base.css
+│   └── layout.css
+│
+├── js/
+│   └── navigation.js
+│
+└── assets/
+    ├── images/
+    └── icons/
