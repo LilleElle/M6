@@ -1,50 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <title>Madblog - Aftensmad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Madro prototype til M6 eksamen">
+  <title>Aftensmad | Madro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #FFFBF2; color: #E88D5F; margin: 0;">
+<body class="">
 
-  <div style="background-color: #FEE099; padding: 30px; text-align: center;">
-    <h1>Smagfulde Opskrifter</h1>
-    <p>Lækre og varme opskrifter til aftensmad</p>
-  </div>
-
-  <div style="padding: 30px; text-align: center;">
-    <h2>Ugens favorit: Bolognese</h2>
-    <p>Den lækreste bolognese du finder. Perfekt til de dage det skal gå lidt hurtigt, men smage meget lækkert!</p>
-    <p><b>Tid:</b> 45 minutter</p>
-  </div>
-
-  <hr>
-
-  <div style="padding: 30px;">
-    <h2>Flere aftensmadsopskrifter</h2>
-
-    <div style="background-color: #CAD182; padding: 20px; margin-bottom: 20px; border-radius: 10px; color: #FFFBF2;">
-      <h3>Lasagne</h3>
-      <p>Lasagne ligesom i Italien</p>
-      <p><b>Tid:</b> 55 minutter</p>
+<header class="site-header">
+  <nav class="nav" aria-label="Primær navigation">
+    <a class="logo" href="index.html" aria-label="Madro forside"><span class="logo-mark">M</span><span>Madro</span></a>
+    <button class="menu-btn" type="button" data-menu-button>Menu</button>
+    <div class="nav-links" data-nav-links>
+      <a href="dashboard.html">Overblik</a>
+      <a href="morgenmad.html">Morgenmad</a>
+      <a href="frokost.html">Frokost</a>
+      <a href="aftensmad.html">Aftensmad</a>
+      <a href="snack.html">Snack</a>
     </div>
-
-    <div style="background-color: #CAD182; padding: 20px; margin-bottom: 20px; border-radius: 10px; color: #FFFBF2;">
-      <h3>Kikærtesalat med fetaost</h3>
-      <p>En lækker proteinfyldt salat med fetaost og grøntsager.</p>
-      <p><b>Tid:</b> 30 minutter</p>
+    <div class="nav-actions">
+      <a class="btn btn-secondary btn-small" href="login.html">Log ind</a>
+      <a class="btn btn-primary btn-small" href="opret-bruger.html">Opret</a>
     </div>
+  </nav>
+</header>
 
-    <div style="background-color: #CAD182; padding: 20px; margin-bottom: 20px; border-radius: 10px; color: #FFFBF2;">
-      <h3>Svamperisotto</h3>
-      <p>Cremet risotto med dyb svampesmag.</p>
-      <p><b>Tid:</b> 1 time</p>
+
+<main>
+  <section class="section compact">
+    <div class="page-title">
+      <div>
+        <span class="eyebrow">Aftensmad</span>
+        <h1>Hverdagsretter med varme</h1>
+        <p>Aftensmadssiden bruger bolognese som et genkendeligt og visuelt varmt eksempel.</p>
+      </div>
     </div>
+    <div class="toolbar">
+      <input class="search" type="search" placeholder="Søg i aftensmad..." data-search>
+      <button class="filter-btn is-active" type="button" data-filter="alle">Alle</button>
+      <button class="filter-btn" type="button" data-filter="aftensmad">Aftensmad</button>
+    </div>
+    <div class="grid grid-3">
+      
+<article class="card meal-card" data-card data-type="aftensmad">
+  <button class="favorite-btn" type="button" data-favorite="bolognese">♡</button>
+  <a href="opskrift.html?id=bolognese">
+    <img src="assets/img/bolognese.svg" alt="Klassisk bolognese">
+    <div class="meal-body">
+      <span class="pill green">Aftensmad</span>
+      <h3>Klassisk bolognese</h3>
+      <p>En nem hverdagsret med klare trin og ingredienser.</p>
+      <div class="meal-meta"><span class="pill">40 min</span><span class="pill">Middel</span></div>
+    </div>
+  </a>
+</article>
 
+<article class="card meal-card" data-card data-type="aftensmad">
+  <button class="favorite-btn" type="button" data-favorite="groentsager">♡</button>
+  <a href="opskrift.html?id=groentsager">
+    <img src="assets/img/groentsager.svg" alt="Ovnbagte grøntsager">
+    <div class="meal-body">
+      <span class="pill green">Aftensmad</span>
+      <h3>Ovnbagte grøntsager</h3>
+      <p>Farverig aftensmad med urter og dressing.</p>
+      <div class="meal-meta"><span class="pill">35 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+<article class="card meal-card" data-card data-type="aftensmad">
+  <button class="favorite-btn" type="button" data-favorite="salat">♡</button>
+  <a href="opskrift.html?id=salat">
+    <img src="assets/img/salat.svg" alt="Nordisk rugbrødssalat">
+    <div class="meal-body">
+      <span class="pill green">Aftensmad</span>
+      <h3>Nordisk rugbrødssalat</h3>
+      <p>Lettere alternativ til en varm aftensmad.</p>
+      <div class="meal-meta"><span class="pill">12 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+    </div>
+    <div class="empty-state" data-empty>Ingen opskrifter matcher din søgning.</div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Madro · M6 prototype</span>
+    <span>Minimalistisk madunivers bygget i HTML, CSS og JavaScript</span>
   </div>
+</footer>
 
-  <div style="background-color: #FEE099; padding: 20px; text-align: center;">
-    <p>© 2026 Smagfulde Opskrifter</p>
-  </div>
-
+<script src="assets/js/app.js"></script>
 </body>
 </html>
