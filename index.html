@@ -1,132 +1,85 @@
-<!-- index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smagfulde Opskrifter</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Madro prototype til M6 eksamen">
+  <title>Forside | Madro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+<body class="">
 
-<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Primær navigation">
+    <a class="logo" href="index.html" aria-label="Madro forside"><span class="logo-mark">M</span><span>Madro</span></a>
+    <button class="menu-btn" type="button" data-menu-button>Menu</button>
+    <div class="nav-links" data-nav-links>
+      <a href="dashboard.html">Overblik</a>
+      <a href="morgenmad.html">Morgenmad</a>
+      <a href="frokost.html">Frokost</a>
+      <a href="aftensmad.html">Aftensmad</a>
+      <a href="snack.html">Snack</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-secondary btn-small" href="login.html">Log ind</a>
+      <a class="btn btn-primary btn-small" href="opret-bruger.html">Opret</a>
+    </div>
+  </nav>
+</header>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <h2>Smagfulde</h2>
-        </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Forside</a></li>
-                <li><a href="morgenmad.html">Morgenmad</a></li>
-                <li><a href="frokost.html">Frokost</a></li>
-                <li><a href="aftensmad.html">Aftensmad</a></li>
-                <li><a href="snack.html">Snack</a></li>
-            </ul>
-        </nav>
-    </header>
+<main>
+  <section class="section hero">
+    <div>
+      <span class="eyebrow">Prototype · M6 eksamen</span>
+      <h1>Madplaner med ro, overblik og appetit.</h1>
+      <p>Madro er et designforslag til en enkel madprototype, hvor brugeren hurtigt kan finde inspiration til morgenmad, frokost, aftensmad og snacks.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="dashboard.html">Se prototype</a>
+        <a class="btn btn-secondary" href="#kategorier">Udforsk retter</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/img/hero-food.svg" alt="Illustration af en indbydende madret">
+    </div>
+  </section>
 
-    <!-- HERO -->
-    <section class="hero">
+  <section class="section compact" id="kategorier">
+    <span class="eyebrow">De fire hovedflows</span>
+    <div class="page-title">
+      <div>
+        <h1>Vælg måltid</h1>
+        <p>Hver kategori har en tydelig hovedret, så prototypen kan demonstreres uden ekstra data eller backend.</p>
+      </div>
+    </div>
+    <div class="category-strip">
+      <a class="category-link" href="morgenmad.html"><span>01</span><strong>Morgenmad</strong><span>Vafler</span></a>
+      <a class="category-link" href="frokost.html"><span>02</span><strong>Frokost</strong><span>Hønsesalat</span></a>
+      <a class="category-link" href="aftensmad.html"><span>03</span><strong>Aftensmad</strong><span>Bolognese</span></a>
+      <a class="category-link" href="snack.html"><span>04</span><strong>Snack</strong><span>Hummus</span></a>
+    </div>
+  </section>
 
-        <div class="hero-text">
-            <h1>Velkommen til <br> smagfulde opskrifter</h1>
+  <section class="section compact">
+    <div class="grid grid-3">
+      <article class="card pad"><h3>Minimal navigation</h3><p>Brugeren kan hurtigt bevæge sig fra forside til kategori og videre til opskrift.</p></article>
+      <article class="card pad"><h3>Lokale visualiseringer</h3><p>Alle madillustrationer ligger som SVG-filer, så projektet kan køre uden billeddownloads.</p></article>
+      <article class="card pad"><h3>Prototypeklar</h3><p>Projektet kan åbnes direkte i Visual Studio Code og køres med Live Server.</p></article>
+    </div>
+  </section>
+</main>
 
-            <p>
-                Find nemme og lækre opskrifter 
-                til alle dagens måltider.
-            </p>
 
-            <button>Se alle opskrifter</button>
-        </div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Madro · M6 prototype</span>
+    <span>Minimalistisk madunivers bygget i HTML, CSS og JavaScript</span>
+  </div>
+</footer>
 
-        <div class="hero-image"></div>
-
-    </section>
-
-    <!-- SEARCH -->
-    <section class="search-section">
-
-        <input type="text" placeholder="Søg efter opskrifter...">
-        <button>Søg</button>
-
-    </section>
-
-    <!-- POPULÆRE OPSKRIFTER -->
-    <section class="recipes">
-
-        <div class="section-title">
-            <h2>Populære opskrifter</h2>
-            <a href="#">Se alle</a>
-        </div>
-
-        <div class="recipe-grid">
-
-            <div class="recipe-card">
-                <div class="recipe-image"></div>
-                <h3>Spaghetti bolognese</h3>
-                <p>25 min</p>
-            </div>
-
-            <div class="recipe-card">
-                <div class="recipe-image"></div>
-                <h3>Vafler med bær</h3>
-                <p>20 min</p>
-            </div>
-
-            <div class="recipe-card">
-                <div class="recipe-image"></div>
-                <h3>Avocado toast</h3>
-                <p>15 min</p>
-            </div>
-
-            <div class="recipe-card">
-                <div class="recipe-image"></div>
-                <h3>Energikugler</h3>
-                <p>10 min</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- KATEGORIER -->
-    <section class="categories">
-
-        <div class="category-card breakfast">
-            <h2>Morgenmad</h2>
-            <p>Start dagen godt med lækre morgenmadsopskrifter.</p>
-            <a href="morgenmad.html">Se opskrifter</a>
-        </div>
-
-        <div class="category-card lunch">
-            <h2>Frokost</h2>
-            <p>Nemme og friske opskrifter til frokost.</p>
-            <a href="frokost.html">Se opskrifter</a>
-        </div>
-
-        <div class="category-card dinner">
-            <h2>Aftensmad</h2>
-            <p>Varme og smagfulde retter til aftensmad.</p>
-            <a href="aftensmad.html">Se opskrifter</a>
-        </div>
-
-        <div class="category-card snack">
-            <h2>Snack</h2>
-            <p>Små lækkerier og hurtige snacks.</p>
-            <a href="snack.html">Se opskrifter</a>
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>© 2026 Smagfulde Opskrifter</p>
-
-    </footer>
-
+<script src="assets/js/app.js"></script>
 </body>
 </html>
