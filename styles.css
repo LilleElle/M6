@@ -8,8 +8,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fffaf3;
-    color: #2f2f2f;
+    background-color: #FFFBF2;
+    color: #E88D5F;
 }
 
 /* HEADER */
@@ -21,7 +21,7 @@ header {
 
     padding: 20px 80px;
 
-    background-color: white;
+    background-color: #FEE099
     border-bottom: 1px solid #eee;
 }
 
