@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Madro prototype til M6 eksamen">
+  <title>Morgenmad | Madro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="">
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primær navigation">
+    <a class="logo" href="index.html" aria-label="Madro forside"><span class="logo-mark">M</span><span>Madro</span></a>
+    <button class="menu-btn" type="button" data-menu-button>Menu</button>
+    <div class="nav-links" data-nav-links>
+      <a href="dashboard.html">Overblik</a>
+      <a href="morgenmad.html">Morgenmad</a>
+      <a href="frokost.html">Frokost</a>
+      <a href="aftensmad.html">Aftensmad</a>
+      <a href="snack.html">Snack</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-secondary btn-small" href="login.html">Log ind</a>
+      <a class="btn btn-primary btn-small" href="opret-bruger.html">Opret</a>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <section class="section compact">
+    <div class="page-title">
+      <div>
+        <span class="eyebrow">Morgenmad</span>
+        <h1>Start dagen enkelt</h1>
+        <p>Her er morgenmadsforslag med vafler som det primære eksempel.</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <input class="search" type="search" placeholder="Søg i morgenmad..." data-search>
+      <button class="filter-btn is-active" type="button" data-filter="alle">Alle</button>
+      <button class="filter-btn" type="button" data-filter="morgenmad">Morgenmad</button>
+    </div>
+    <div class="grid grid-3">
+      
+<article class="card meal-card" data-card data-type="morgenmad">
+  <button class="favorite-btn" type="button" data-favorite="vafler">♡</button>
+  <a href="opskrift.html?id=vafler">
+    <img src="assets/img/vafler.svg" alt="Sprøde vafler med bær">
+    <div class="meal-body">
+      <span class="pill green">Morgenmad</span>
+      <h3>Sprøde vafler med bær</h3>
+      <p>Gyldne vafler med frisk topping og kort tilberedningstid.</p>
+      <div class="meal-meta"><span class="pill">20 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+<article class="card meal-card" data-card data-type="morgenmad">
+  <button class="favorite-btn" type="button" data-favorite="smoothie">♡</button>
+  <a href="opskrift.html?id=smoothie">
+    <img src="assets/img/smoothie.svg" alt="Grøn smoothie bowl">
+    <div class="meal-body">
+      <span class="pill green">Morgenmad</span>
+      <h3>Grøn smoothie bowl</h3>
+      <p>Frisk smoothie bowl med frugt, grønt og topping.</p>
+      <div class="meal-meta"><span class="pill">8 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+<article class="card meal-card" data-card data-type="morgenmad">
+  <button class="favorite-btn" type="button" data-favorite="dadelkugler">♡</button>
+  <a href="opskrift.html?id=dadelkugler">
+    <img src="assets/img/dadelkugler.svg" alt="Dadelkugler med kakao">
+    <div class="meal-body">
+      <span class="pill green">Morgenmad</span>
+      <h3>Dadelkugler med kakao</h3>
+      <p>Kan også bruges som sød morgen-snack ved siden af kaffe.</p>
+      <div class="meal-meta"><span class="pill">12 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+    </div>
+    <div class="empty-state" data-empty>Ingen opskrifter matcher din søgning.</div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Madro · M6 prototype</span>
+    <span>Minimalistisk madunivers bygget i HTML, CSS og JavaScript</span>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

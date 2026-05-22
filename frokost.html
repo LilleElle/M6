@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Madro prototype til M6 eksamen">
+  <title>Frokost | Madro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="">
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primær navigation">
+    <a class="logo" href="index.html" aria-label="Madro forside"><span class="logo-mark">M</span><span>Madro</span></a>
+    <button class="menu-btn" type="button" data-menu-button>Menu</button>
+    <div class="nav-links" data-nav-links>
+      <a href="dashboard.html">Overblik</a>
+      <a href="morgenmad.html">Morgenmad</a>
+      <a href="frokost.html">Frokost</a>
+      <a href="aftensmad.html">Aftensmad</a>
+      <a href="snack.html">Snack</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-secondary btn-small" href="login.html">Log ind</a>
+      <a class="btn btn-primary btn-small" href="opret-bruger.html">Opret</a>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <section class="section compact">
+    <div class="page-title">
+      <div>
+        <span class="eyebrow">Frokost</span>
+        <h1>Midt på dagen</h1>
+        <p>Frokostsiden viser hønsesalat som et lyst og overskueligt måltidsforslag.</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <input class="search" type="search" placeholder="Søg i frokost..." data-search>
+      <button class="filter-btn is-active" type="button" data-filter="alle">Alle</button>
+      <button class="filter-btn" type="button" data-filter="frokost">Frokost</button>
+    </div>
+    <div class="grid grid-3">
+      
+<article class="card meal-card" data-card data-type="frokost">
+  <button class="favorite-btn" type="button" data-favorite="hoensesalat">♡</button>
+  <a href="opskrift.html?id=hoensesalat">
+    <img src="assets/img/hoensesalat.svg" alt="Hønsesalat på ristet brød">
+    <div class="meal-body">
+      <span class="pill green">Frokost</span>
+      <h3>Hønsesalat på ristet brød</h3>
+      <p>Cremet, frisk og nem at servere i en hverdagsprototype.</p>
+      <div class="meal-meta"><span class="pill">15 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+<article class="card meal-card" data-card data-type="frokost">
+  <button class="favorite-btn" type="button" data-favorite="salat">♡</button>
+  <a href="opskrift.html?id=salat">
+    <img src="assets/img/salat.svg" alt="Nordisk rugbrødssalat">
+    <div class="meal-body">
+      <span class="pill green">Frokost</span>
+      <h3>Nordisk rugbrødssalat</h3>
+      <p>Let salat med rugbrød, æg og grønt.</p>
+      <div class="meal-meta"><span class="pill">12 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+<article class="card meal-card" data-card data-type="frokost">
+  <button class="favorite-btn" type="button" data-favorite="hummus">♡</button>
+  <a href="opskrift.html?id=hummus">
+    <img src="assets/img/hummus.svg" alt="Hummus med grøntsagsstænger">
+    <div class="meal-body">
+      <span class="pill green">Frokost</span>
+      <h3>Hummus med grøntsagsstænger</h3>
+      <p>Et hurtigt frokost-supplement med sprødt grønt.</p>
+      <div class="meal-meta"><span class="pill">10 min</span><span class="pill">Nem</span></div>
+    </div>
+  </a>
+</article>
+
+    </div>
+    <div class="empty-state" data-empty>Ingen opskrifter matcher din søgning.</div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Madro · M6 prototype</span>
+    <span>Minimalistisk madunivers bygget i HTML, CSS og JavaScript</span>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
