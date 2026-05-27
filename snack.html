@@ -14,88 +14,96 @@
 
 <header class="site-header">
   <nav class="nav" aria-label="Primær navigation">
-    <a class="logo" href="index.html" aria-label="Madro forside"><span class="logo-mark">M</span><span>Madro</span></a>
+    <a class="logo" href="index.html" aria-label="Smagfulde opskrifter forside"><span class="logo-mark">S</span><span>Smagfulde<span class="logo-line">OPSKRIFTER</span>
+
+</span></a>
     <button class="menu-btn" type="button" data-menu-button>Menu</button>
     <div class="nav-links" data-nav-links>
-      <a href="dashboard.html">Overblik</a>
+      <a href="index.html">Forside</a>
       <a href="morgenmad.html">Morgenmad</a>
       <a href="frokost.html">Frokost</a>
       <a href="aftensmad.html">Aftensmad</a>
       <a href="snack.html">Snack</a>
     </div>
+    <!--
     <div class="nav-actions">
       <a class="btn btn-secondary btn-small" href="login.html">Log ind</a>
       <a class="btn btn-primary btn-small" href="opret-bruger.html">Opret</a>
     </div>
+    -->
   </nav>
 </header>
 
 
+
 <main>
-  <section class="section compact">
-    <div class="page-title">
-      <div>
-        <span class="eyebrow">Snack</span>
-        <h1>Små måltider</h1>
-        <p>Snacksiden viser hummus som et hurtigt, grønt og indbydende alternativ.</p>
+  
+  <section class="section hero">
+    <div>
+      <h1>
+        <span>Snacks</span>
+      </h1>
+      <p>Opdag nye snacks til<br>enhver lejlighed</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="dashboard.html">Se snackopskrifter -></a>
       </div>
     </div>
+    <div class="hero-art">
+      <img src="assets/img/hero-food.svg" alt="Illustration af en indbydende madret">
+    </div>
+  </section>
+  
+  <section class="section compact">
     <div class="toolbar">
-      <input class="search" type="search" placeholder="Søg i snack..." data-search>
       <button class="filter-btn is-active" type="button" data-filter="alle">Alle</button>
-      <button class="filter-btn" type="button" data-filter="snack">Snack</button>
+      <button class="filter-btn" type="button" data-filter="snack">Salt</button>
+      <button class="filter-btn" type="button" data-filter="snack">Søde</button>
+      <button class="filter-btn" type="button" data-filter="snack">Lette</button>
+      <button class="filter-btn" type="button" data-filter="snack">Sunde</button>
+      <button class="filter-btn" type="button" data-filter="snack">Fornemt</button>
     </div>
-    <div class="grid grid-3">
-      
-<article class="card meal-card" data-card data-type="snack">
-  <button class="favorite-btn" type="button" data-favorite="hummus">♡</button>
-  <a href="opskrift.html?id=hummus">
-    <img src="assets/img/hummus.svg" alt="Hummus med grøntsagsstænger">
-    <div class="meal-body">
-      <span class="pill green">Snack</span>
-      <h3>Hummus med grøntsagsstænger</h3>
-      <p>Cremet hummus og sprøde grøntsager på få minutter.</p>
-      <div class="meal-meta"><span class="pill">10 min</span><span class="pill">Nem</span></div>
-    </div>
-  </a>
-</article>
-
-<article class="card meal-card" data-card data-type="snack">
-  <button class="favorite-btn" type="button" data-favorite="dadelkugler">♡</button>
-  <a href="opskrift.html?id=dadelkugler">
-    <img src="assets/img/dadelkugler.svg" alt="Dadelkugler med kakao">
-    <div class="meal-body">
-      <span class="pill green">Snack</span>
-      <h3>Dadelkugler med kakao</h3>
-      <p>Sød snack med få ingredienser.</p>
-      <div class="meal-meta"><span class="pill">12 min</span><span class="pill">Nem</span></div>
-    </div>
-  </a>
-</article>
-
-<article class="card meal-card" data-card data-type="snack">
-  <button class="favorite-btn" type="button" data-favorite="smoothie">♡</button>
-  <a href="opskrift.html?id=smoothie">
-    <img src="assets/img/smoothie.svg" alt="Grøn smoothie bowl">
-    <div class="meal-body">
-      <span class="pill green">Snack</span>
-      <h3>Grøn smoothie bowl</h3>
-      <p>Friskt mellemmåltid med frugt og grønt.</p>
-      <div class="meal-meta"><span class="pill">8 min</span><span class="pill">Nem</span></div>
-    </div>
-  </a>
-</article>
-
-    </div>
-    <div class="empty-state" data-empty>Ingen opskrifter matcher din søgning.</div>
+    
+    <div class="recipe-grid">
+      <a class="recipe-card" href="morgenmad.html">
+      <img src="assets/img/vafler.svg" alt="Vafler">
+      <div class="recipe-info">
+  
+        <strong>Hummus med brødstykker</strong>
+        <span class="recipe-time">30 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="frokost.html">
+      <img src="assets/img/hoensesalat.svg" alt="Hønsesalat">
+      <div class="recipe-info">
+        <strong>Svøbte dadler</strong>
+        <span class="recipe-time">30 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="aftensmad.html">
+      <img src="assets/img/bolognese.svg" alt="Bolognese">
+      <div class="recipe-info">
+        <strong>Frugtskål med creme</strong>
+        <span class="recipe-time">15 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="snack.html">
+      <img src="assets/img/hummus.svg" alt="Hummus">
+      <div class="recipe-info">
+        <strong>Mini toasts</strong>
+        <span class="recipe-time">10 min</span>
+      </div>
+    </a>
+  </div>
   </section>
 </main>
 
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span>Madro · M6 prototype</span>
-    <span>Minimalistisk madunivers bygget i HTML, CSS og JavaScript</span>
+    <span>Smagfulde opskrifter · M6 prototype</span>
   </div>
 </footer>
 

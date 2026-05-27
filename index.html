@@ -14,7 +14,9 @@
 
 <header class="site-header">
   <nav class="nav" aria-label="Primær navigation">
-    <a class="logo" href="index.html" aria-label="Smagfulde opskrifter forside"><span class="logo-mark">S</span><span>Smagfulde opskrifter</span></a>
+    <a class="logo" href="index.html" aria-label="Smagfulde opskrifter forside"><span class="logo-mark">S</span><span>Smagfulde<span class="logo-line">OPSKRIFTER</span>
+
+</span></a>
     <button class="menu-btn" type="button" data-menu-button>Menu</button>
     <div class="nav-links" data-nav-links>
       <a href="index.html">Forside</a>
@@ -36,49 +38,69 @@
 <main>
   <section class="section hero">
     <div>
-      <span class="eyebrow">Prototype · M6 eksamen</span>
-      <h1>Madplaner med ro, overblik og appetit.</h1>
-      <p>Smagfulde opskrifter er et designforslag til en enkel madprototype, hvor brugeren hurtigt kan finde inspiration til morgenmad, frokost, aftensmad og snacks.</p>
+      <h1>
+        <span>Velkommen til</span>
+        <span class="nowrap">smagfulde opskrifter</span>
+      </h1>
+      <p>Find nemme og lækre opskrifter<br>til alle måltider på dagen.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="dashboard.html">Se prototype</a>
-        <a class="btn btn-secondary" href="#kategorier">Udforsk retter</a>
+        <a class="btn btn-primary" href="dashboard.html">Se alle opskrifter -></a>
       </div>
     </div>
     <div class="hero-art">
-      <img src="assets/img/hero-food.svg" alt="Illustration af en indbydende madret">
+      <img src="assets/img/salat_realistisk_uden_tekst.svg" alt="Illustration af en indbydende madret">
     </div>
   </section>
 
   <section class="section compact" id="kategorier">
-    <span class="eyebrow">De fire hovedflows</span>
     <div class="page-title">
       <div>
-        <h1>Vælg måltid</h1>
-        <p>Hver kategori har en tydelig hovedret, så prototypen kan demonstreres uden ekstra data eller backend.</p>
+        <h2>Populære opskrifter</h2>
       </div>
     </div>
-    <div class="category-strip">
-      <a class="category-link" href="morgenmad.html"><span>01</span><strong>Morgenmad</strong><span>Vafler</span></a>
-      <a class="category-link" href="frokost.html"><span>02</span><strong>Frokost</strong><span>Hønsesalat</span></a>
-      <a class="category-link" href="aftensmad.html"><span>03</span><strong>Aftensmad</strong><span>Bolognese</span></a>
-      <a class="category-link" href="snack.html"><span>04</span><strong>Snack</strong><span>Hummus</span></a>
-    </div>
-  </section>
-
-  <section class="section compact">
-    <div class="grid grid-3">
-      <article class="card pad"><h3>Minimal navigation</h3><p>Brugeren kan hurtigt bevæge sig fra forside til kategori og videre til opskrift.</p></article>
-      <article class="card pad"><h3>Lokale visualiseringer</h3><p>Alle madillustrationer ligger som SVG-filer, så projektet kan køre uden billeddownloads.</p></article>
-      <article class="card pad"><h3>Prototypeklar</h3><p>Projektet kan åbnes direkte i Visual Studio Code og køres med Live Server.</p></article>
-    </div>
-  </section>
-</main>
+    <div class="recipe-grid">
+      <a class="recipe-card" href="morgenmad.html">
+      <img src="assets/img/vafler.svg" alt="Vafler">
+      <div class="recipe-info">
+        <span class="recipe-type">Morgenmad</span>
+        <strong>Vafler</strong>
+        <span class="recipe-time">25 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="frokost.html">
+      <img src="assets/img/hoensesalat.svg" alt="Hønsesalat">
+      <div class="recipe-info">
+        <span class="recipe-type">Frokost</span>
+        <strong>Hønsesalat</strong>
+        <span class="recipe-time">20 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="aftensmad.html">
+      <img src="assets/img/bolognese.svg" alt="Bolognese">
+      <div class="recipe-info">
+        <span class="recipe-type">Aftensmad</span>
+        <strong>Bolognese</strong>
+        <span class="recipe-time">45 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="snack.html">
+      <img src="assets/img/hummus.svg" alt="Hummus">
+      <div class="recipe-info">
+        <span class="recipe-type">Snack</span>
+        <strong>Hummus</strong>
+        <span class="recipe-time">15 min</span>
+      </div>
+    </a>
+  </div>
+</section>
 
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span>Madro · M6 prototype</span>
-    <span>Minimalistisk madunivers bygget i HTML, CSS og JavaScript</span>
+    <span>Smagfulde opskrifter · M6 prototype</span>
   </div>
 </footer>
 
