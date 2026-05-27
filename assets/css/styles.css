@@ -107,19 +107,7 @@ main { min-height: calc(100vh - 86px); }
   padding: 5rem 1.25rem;
 }
 .section.compact { padding-top: 2.5rem; }
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  background: rgba(255,253,248,.72);
-  border: 1px solid var(--line);
-  color: var(--accent-dark);
-  border-radius: 999px;
-  padding: .45rem .8rem;
-  font-weight: 400;
-  font-size: .86rem;
-  margin-bottom: 1rem;
-}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -222,10 +210,7 @@ main { min-height: calc(100vh - 86px); }
 .btn-ghost { background: transparent; color: var(--accent-dark); }
 .btn-small { padding: .56rem .8rem; font-size: .9rem; min-height: 36px; }
 
-.grid { display: grid; gap: 1rem; }
-.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
 
 .card {
   background: rgba(255,253,248,.84);
@@ -237,9 +222,6 @@ main { min-height: calc(100vh - 86px); }
 .card.pad { padding: 1.15rem; }
 .card h2, .card h3 { margin: 0 0 .5rem; letter-spacing: -.045em; line-height: 1.05; }
 .card p { color: var(--muted); margin: 0; }
-.meal-card { position: relative; min-height: 100%; }
-.meal-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; background: var(--surface-2); }
-.meal-body { padding: 1rem; }
 .meal-meta { display: flex; flex-wrap: wrap; gap: .45rem; margin: .8rem 0 0; }
 .pill {
   display: inline-flex;
@@ -253,40 +235,7 @@ main { min-height: calc(100vh - 86px); }
   font-size: .82rem;
 }
 .pill.green { background: var(--accent-soft); color: var(--accent-dark); border-color: transparent; }
-.favorite-btn {
-  position: absolute;
-  top: .85rem;
-  right: .85rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,.7);
-  background: rgba(255,253,248,.82);
-  cursor: pointer;
-  font-size: 1.1rem;
-  box-shadow: 0 8px 18px rgba(56,45,30,.14);
-}
-.favorite-btn.is-active { background: var(--accent-dark); color: white; }
-.category-strip {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.category-link {
-  border-radius: var(--radius-lg);
-  padding: 1rem;
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  transition: transform .16s ease, box-shadow .16s ease;
-}
-.category-link:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-.category-link span { color: var(--muted); font-weight: 700; }
-.category-link strong { font-size: 1.25rem; letter-spacing: -.045em; }
+
 
 .recipe-grid {
   display: grid;
@@ -359,15 +308,7 @@ main { min-height: calc(100vh - 86px); }
   flex-wrap: wrap;
   margin: 1.5rem 0 1rem;
 }
-.search {
-  min-width: min(100%, 340px);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: .85rem 1rem;
-  outline: none;
-}
-.search:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(125,143,92,.15); }
+
 .filter-btn {
   border: 1px solid var(--line);
   background: var(--accent);
@@ -379,24 +320,7 @@ main { min-height: calc(100vh - 86px); }
 }
 .filter-btn.is-active { background: var(--accent-orange); color: white; }
 
-.dashboard {
-  grid-template-columns: 1.15fr .85fr;
-  align-items: stretch;
-}
-.plan-list { display: grid; gap: .8rem; }
-.plan-row {
-  display: grid;
-  grid-template-columns: 92px 1fr auto;
-  gap: .85rem;
-  align-items: center;
-  padding: .85rem;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  background: rgba(255,253,248,.72);
-}
-.plan-row img { width: 92px; height: 70px; object-fit: cover; border-radius: 16px; background: var(--surface-2); }
-.plan-row small { color: var(--muted); font-weight: 800; }
-.plan-row strong { display:block; letter-spacing:-.03em; }
+
 
 .recipe-hero {
   display: grid;
@@ -453,43 +377,9 @@ main { min-height: calc(100vh - 86px); }
   font-weight: 900;
 }
 
-.auth-wrap {
-  min-height: calc(100vh - 74px);
-  display: grid;
-  place-items: center;
-  padding: 3rem 1.25rem;
-}
-.auth-card {
-  width: min(100%, 460px);
-  background: rgba(255,253,248,.9);
-  border: 1px solid var(--line);
-  border-radius: 34px;
-  padding: 1.35rem;
-  box-shadow: var(--shadow);
-}
-.auth-card h1 { margin: .4rem 0 .6rem; font-size: 2.15rem; letter-spacing: -.07em; line-height: 1; }
-.form { display: grid; gap: .8rem; margin-top: 1.2rem; }
-.form label { font-weight: 800; color: var(--text); }
-.form input {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: white;
-  padding: .9rem 1rem;
-  outline: none;
-}
-.form input:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(125,143,92,.14); }
-.form-note { color: var(--muted); font-size: .92rem; text-align:center; margin-top: 1rem; }
 
-.empty-state {
-  display:none;
-  text-align:center;
-  padding: 2rem;
-  border-radius: var(--radius-lg);
-  border: 1px dashed var(--line);
-  color: var(--muted);
-}
-.empty-state.is-visible { display:block; }
+
+
 
 .site-footer {
   border-top: 1px solid var(--line);
@@ -499,8 +389,7 @@ main { min-height: calc(100vh - 86px); }
 .footer-inner { max-width: var(--max); margin:0 auto; display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
 
 @media (max-width: 920px) {
-  .hero, .recipe-hero, .recipe-layout, .dashboard, .page-title { grid-template-columns: 1fr; }
-  .grid-3, .grid-4, .category-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero, .recipe-hero, .recipe-layout, .page-title { grid-template-columns: 1fr; }
   .nav-actions .btn-secondary { display:none; }
   .menu-btn {
     display:inline-flex;
@@ -530,9 +419,5 @@ main { min-height: calc(100vh - 86px); }
 @media (max-width: 620px) {
   .section { padding: 3rem 1rem; }
   .hero { padding-top: 2.5rem; }
-  .grid-2, .grid-3, .grid-4, .category-strip { grid-template-columns: 1fr; }
-  .plan-row { grid-template-columns: 74px 1fr; }
-  .plan-row img { width:74px; height:62px; }
-  .plan-row .btn { grid-column: 1 / -1; }
   .hero h1, .page-title h1 { font-size: clamp(2.4rem, 16vw, 4.2rem); }
 }
