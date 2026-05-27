@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Smagfulde opskrifter prototype til M6 eksamen">
-  <title>Forside | Smagfulde opskrifter </title>
+  <meta name="description" content="Madro prototype til M6 eksamen">
+  <title>Morgenmad | Madro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -36,66 +36,68 @@
 
 
 <main>
+  
   <section class="section hero">
     <div>
       <h1>
-        <span>Velkommen til</span>
-        <span class="nowrap">smagfulde opskrifter</span>
+        <span>Morgenmand</span>
       </h1>
-      <p>Find nemme og lækre opskrifter<br>til alle måltider på dagen.</p>
+      <p>Start dagen med energi<br>og gode råvarer</p>
       <div class="actions">
-        <a class="btn btn-primary" href="dashboard.html">Se alle opskrifter -></a>
+        <a class="btn btn-primary" href="dashboard.html">Se morgenmadsopskrifter -></a>
       </div>
     </div>
     <div class="hero-art">
-      <img src="assets/img/salat_realistisk_uden_tekst.svg" alt="Illustration af en indbydende madret">
+      <img src="assets/img/vafler_med_baer.svg" alt="Illustration af en indbydende madret">
     </div>
   </section>
-
-  <section class="section compact" id="kategorier">
-    <div class="page-title">
-      <div>
-        <h2>Populære opskrifter</h2>
-      </div>
+  
+  <section class="section compact">
+    <div class="toolbar">
+      <button class="filter-btn is-active" type="button" data-filter="alle">Alle</button>
+      <button class="filter-btn" type="button" data-filter="morgenmad">Hurtige</button>
+      <button class="filter-btn" type="button" data-filter="morgenmad">Søde</button>
+      <button class="filter-btn" type="button" data-filter="morgenmad">Sunde</button>
+      <button class="filter-btn" type="button" data-filter="morgenmad">Boller</button>
+      <button class="filter-btn" type="button" data-filter="morgenmad">Smoothies</button>
     </div>
+    
     <div class="recipe-grid">
-      <a class="recipe-card" href="vafler_opskrift.html">
+      <a class="recipe-card" href="morgenmad.html">
       <img src="assets/img/vafler_med_baer.svg" alt="Vafler">
       <div class="recipe-info">
-        <span class="recipe-type">Morgenmad</span>
+  
         <strong>Vafler med bær</strong>
-        <span class="recipe-time">25 min</span>
-      </div>
-    </a>
-    
-    <a class="recipe-card" href="hoensesalat_opskrift.html">
-      <img src="assets/img/hoensesalat_paa_rugbroed.svg" alt="Hønsesalat">
-      <div class="recipe-info">
-        <span class="recipe-type">Frokost</span>
-        <strong>Hønsesalat på rugbrød</strong>
         <span class="recipe-time">20 min</span>
       </div>
     </a>
     
-    <a class="recipe-card" href="bolognese_opskrift.html">
-      <img src="assets/img/spaghetti_bolognese.svg" alt="Bolognese">
+    <a class="recipe-card" href="morgenmad.html">
+      <img src="assets/img/overnight_oats_med_baer.svg" alt="Hønsesalat">
       <div class="recipe-info">
-        <span class="recipe-type">Aftensmad</span>
-        <strong>Spaghetti Bolognese</strong>
-        <span class="recipe-time">45 min</span>
+        <strong>Overnight oats med bær</strong>
+        <span class="recipe-time">10 min</span>
       </div>
     </a>
     
-    <a class="recipe-card" href="havregrynskugler_opskrift.html">
-      <img src="assets/img/havregrynskugler.svg" alt="Havregrynskugler">
+    <a class="recipe-card" href="morgenmad.html">
+      <img src="assets/img/pandekager_med_frugt.svg" alt="Pandekager">
       <div class="recipe-info">
-        <span class="recipe-type">Snack</span>
-        <strong>Havregrynskugler</strong>
-        <span class="recipe-time">15 min</span>
+        <strong>Pandekager med frugt</strong>
+        <span class="recipe-time">20 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="morgenmad.html">
+      <img src="assets/img/chiagroed_med_mango.svg" alt="Chiagrød">
+      <div class="recipe-info">
+        <strong>Chiagrød med mango</strong>
+        <span class="recipe-time">10 min</span>
       </div>
     </a>
   </div>
-</section>
+  </section>
+</main>
 
 
 <footer class="site-footer">

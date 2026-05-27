@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Smagfulde opskrifter prototype til M6 eksamen">
-  <title>Forside | Smagfulde opskrifter </title>
+  <meta name="description" content="Madro prototype til M6 eksamen">
+  <title>Aftensmad | Madro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,67 +35,70 @@
 </header>
 
 
+
 <main>
+  
   <section class="section hero">
     <div>
       <h1>
-        <span>Velkommen til</span>
-        <span class="nowrap">smagfulde opskrifter</span>
+        <span>Aftensmad</span>
       </h1>
-      <p>Find nemme og lækre opskrifter<br>til alle måltider på dagen.</p>
+      <p>Find inspiration til aftensmad<br>for hele familien</p>
       <div class="actions">
-        <a class="btn btn-primary" href="dashboard.html">Se alle opskrifter -></a>
+        <a class="btn btn-primary" href="dashboard.html">Se aftensmadopskrifter -></a>
       </div>
     </div>
     <div class="hero-art">
-      <img src="assets/img/salat_realistisk_uden_tekst.svg" alt="Illustration af en indbydende madret">
+      <img src="assets/img/kylling_i_karry.svg" alt="Illustration af en indbydende madret">
     </div>
   </section>
-
-  <section class="section compact" id="kategorier">
-    <div class="page-title">
-      <div>
-        <h2>Populære opskrifter</h2>
-      </div>
+  
+  <section class="section compact">
+    <div class="toolbar">
+      <button class="filter-btn is-active" type="button" data-filter="alle">Alle</button>
+      <button class="filter-btn" type="button" data-filter="aftensmad">Kød</button>
+      <button class="filter-btn" type="button" data-filter="aftensmad">Fisk</button>
+      <button class="filter-btn" type="button" data-filter="aftensmad">Vegatar</button>
+      <button class="filter-btn" type="button" data-filter="aftensmad">Onepot</button>
+      <button class="filter-btn" type="button" data-filter="aftensmad">Børnevenligt</button>
     </div>
+    
     <div class="recipe-grid">
-      <a class="recipe-card" href="vafler_opskrift.html">
-      <img src="assets/img/vafler_med_baer.svg" alt="Vafler">
+      <a class="recipe-card" href="aftensmad.html">
+      <img src="assets/img/spaghetti_bolognese.svg" alt="Bolognese">
       <div class="recipe-info">
-        <span class="recipe-type">Morgenmad</span>
-        <strong>Vafler med bær</strong>
+  
+        <strong>Spaghetti Bolognese</strong>
+        <span class="recipe-time">30 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="aftensmad.html">
+      <img src="assets/img/kylling_i_karry.svg" alt="Kylling i karry">
+      <div class="recipe-info">
+        <strong>Kylling i karry</strong>
+        <span class="recipe-time">30 min</span>
+      </div>
+    </a>
+    
+    <a class="recipe-card" href="aftensmad.html">
+      <img src="assets/img/ovnbagt_laks_med_groentsager.svg" alt="Ovnbagt laks med grøntsager">
+      <div class="recipe-info">
+        <strong>Ovnbagt laks med grøntsager</strong>
         <span class="recipe-time">25 min</span>
       </div>
     </a>
     
-    <a class="recipe-card" href="hoensesalat_opskrift.html">
-      <img src="assets/img/hoensesalat_paa_rugbroed.svg" alt="Hønsesalat">
+    <a class="recipe-card" href="aftensmad.html">
+      <img src="assets/img/vegetarlasagne.svg" alt="Vegetarlasagne">
       <div class="recipe-info">
-        <span class="recipe-type">Frokost</span>
-        <strong>Hønsesalat på rugbrød</strong>
-        <span class="recipe-time">20 min</span>
-      </div>
-    </a>
-    
-    <a class="recipe-card" href="bolognese_opskrift.html">
-      <img src="assets/img/spaghetti_bolognese.svg" alt="Bolognese">
-      <div class="recipe-info">
-        <span class="recipe-type">Aftensmad</span>
-        <strong>Spaghetti Bolognese</strong>
+        <strong>Vegetarlasagne</strong>
         <span class="recipe-time">45 min</span>
       </div>
     </a>
-    
-    <a class="recipe-card" href="havregrynskugler_opskrift.html">
-      <img src="assets/img/havregrynskugler.svg" alt="Havregrynskugler">
-      <div class="recipe-info">
-        <span class="recipe-type">Snack</span>
-        <strong>Havregrynskugler</strong>
-        <span class="recipe-time">15 min</span>
-      </div>
-    </a>
   </div>
-</section>
+  </section>
+</main>
 
 
 <footer class="site-footer">
