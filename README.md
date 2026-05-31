@@ -12,7 +12,8 @@ Dette projekt er en statisk prototype hjemmeside, der præsenterer opskrifter og
 - `aftensmad.html` — side med aftensmadsopsætning.
 - `snack.html` — side med snackforslag.
 - `bolognese_opskrift.html`, `havregrynskugler_opskrift.html`, `hoensesalat_opskrift.html`, `vafler_opskrift.html` — individuelle opskriftssider.
-- `assets/css/styles.css` — styling for hele websitet.
+- `assets/css/styles.css` — overordnede tema- og layoutregler.
+- `assets/css/components.css` — komponent- og sideelement-styling.
 - `assets/js/app.js` — JavaScript til interaktivitet og funktionalitet.
 - `assets/img/` — mappe til billeder brugt på siden.
 
@@ -41,7 +42,8 @@ Dette projekt er en statisk prototype hjemmeside, der præsenterer opskrifter og
 M6/
 ├── assets/
 │   ├── css/
-│   │   └── styles.css
+│   │   ├── styles.css
+│   │   └── components.css
 │   ├── img/
 │   └── js/
 │       └── app.js
